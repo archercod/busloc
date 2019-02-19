@@ -21,6 +21,10 @@
 		EAB0620B221BEBE100736130 /* WarsawService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0620A221BEBE100736130 /* WarsawService.swift */; };
 		EAB06213221BF0D200736130 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB06211221BF0D200736130 /* CityTableViewCell.swift */; };
 		EAB06214221BF0D200736130 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB06212221BF0D200736130 /* CityTableViewCell.xib */; };
+		EAB06216221BF74500736130 /* BusAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB06215221BF74500736130 /* BusAnnotation.swift */; };
+		EAB06218221C0B0600736130 /* TramAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB06217221C0B0600736130 /* TramAnnotation.swift */; };
+		EAB0621C221C0F6200736130 /* LineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0621A221C0F6200736130 /* LineTableViewCell.swift */; };
+		EAB0621D221C0F6200736130 /* LineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB0621B221C0F6200736130 /* LineTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		EAB0620A221BEBE100736130 /* WarsawService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarsawService.swift; sourceTree = "<group>"; };
 		EAB06211221BF0D200736130 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		EAB06212221BF0D200736130 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		EAB06215221BF74500736130 /* BusAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusAnnotation.swift; sourceTree = "<group>"; };
+		EAB06217221C0B0600736130 /* TramAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramAnnotation.swift; sourceTree = "<group>"; };
+		EAB0621A221C0F6200736130 /* LineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTableViewCell.swift; sourceTree = "<group>"; };
+		EAB0621B221C0F6200736130 /* LineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +119,12 @@
 		EAB061C7221BDDEB00736130 /* Busloc */ = {
 			isa = PBXGroup;
 			children = (
-				EAB06204221BE7F000736130 /* Configs */,
 				EAB061C8221BDDEB00736130 /* AppDelegate.swift */,
 				EAB061FB221BDE0F00736130 /* Controller */,
 				EAB061FA221BDE0A00736130 /* View */,
 				EAB061F9221BDDFD00736130 /* Model */,
 				EAB061FD221BDE1A00736130 /* Networking */,
+				EAB06204221BE7F000736130 /* Configs */,
 				EAB061FC221BDE1400736130 /* Extensions */,
 				EAB06200221BDE4C00736130 /* Resources */,
 			);
@@ -146,6 +154,8 @@
 			children = (
 				EAB06207221BEAFF00736130 /* Warsaw */,
 				EAB06201221BDE5B00736130 /* CoreData */,
+				EAB06215221BF74500736130 /* BusAnnotation.swift */,
+				EAB06217221C0B0600736130 /* TramAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +205,7 @@
 		EAB061FF221BDE3800736130 /* Xib */ = {
 			isa = PBXGroup;
 			children = (
+				EAB06219221C0F5100736130 /* LineTableViewCell */,
 				EAB0620E221BF06500736130 /* CityTableViewCell */,
 			);
 			path = Xib;
@@ -240,6 +251,15 @@
 				EAB06212221BF0D200736130 /* CityTableViewCell.xib */,
 			);
 			path = CityTableViewCell;
+			sourceTree = "<group>";
+		};
+		EAB06219221C0F5100736130 /* LineTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EAB0621A221C0F6200736130 /* LineTableViewCell.swift */,
+				EAB0621B221C0F6200736130 /* LineTableViewCell.xib */,
+			);
+			path = LineTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +369,7 @@
 				EAB061D6221BDDED00736130 /* LaunchScreen.storyboard in Resources */,
 				EAB061D3221BDDED00736130 /* Assets.xcassets in Resources */,
 				EAB06214221BF0D200736130 /* CityTableViewCell.xib in Resources */,
+				EAB0621D221C0F6200736130 /* LineTableViewCell.xib in Resources */,
 				EAB061CE221BDDEB00736130 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +395,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB06218221C0B0600736130 /* TramAnnotation.swift in Sources */,
+				EAB0621C221C0F6200736130 /* LineTableViewCell.swift in Sources */,
+				EAB06216221BF74500736130 /* BusAnnotation.swift in Sources */,
 				EAB06209221BEB0F00736130 /* WarsawModel.swift in Sources */,
 				EAB06206221BE80300736130 /* Configs.swift in Sources */,
 				EAB061CB221BDDEB00736130 /* CitiesListViewController.swift in Sources */,

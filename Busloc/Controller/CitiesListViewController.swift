@@ -44,7 +44,7 @@ class CitiesListViewController: UIViewController {
         
         /// Xib cell registration
         
-        tableView.register(CityTableViewCell.self, forCellReuseIdentifier: CellIdentifier.CityCell.rawValue)
+        tableView.register(CityTableViewCell.ViewConfiguration.default.nib, forCellReuseIdentifier: CellIdentifier.CityCell.rawValue)
     }
     
     // MARK: - Setups
@@ -80,12 +80,22 @@ extension CitiesListViewController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.row {
+        case 0:
+            self.performSegue(withIdentifier: Segues.toWarsawMap.rawValue, sender: nil)
+        default:
+            break
+        }
+        
+    }
+    
 }
 
 // MARK: - UITableViewDelegate
 
 extension CitiesListViewController: UITableViewDelegate {
-    
     
 }
 

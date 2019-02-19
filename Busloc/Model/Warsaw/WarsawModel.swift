@@ -16,8 +16,8 @@ struct WarsawList: Codable {
 
 struct Warsaw: Codable {
     
-    let Lat: Double
-    let Lon: Double
+    let Lat: Double?
+    let Lon: Double?
     let Time: String
     let Lines: String
     let Brigade: String

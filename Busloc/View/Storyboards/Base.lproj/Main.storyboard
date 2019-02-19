@@ -59,13 +59,50 @@
                     <view key="view" contentMode="scaleToFill" id="qg9-tH-ep4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BNI-ri-7jo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Rx-3f-BMM">
+                                <rect key="frame" x="315" y="124" width="60" height="483"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="rLJ-0n-uWO"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LineCell" id="mfB-ST-hWQ" customClass="LineTableViewCell" customModule="Busloc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="60" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mfB-ST-hWQ" id="aid-e3-8w5">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BNI-ri-7jo" firstAttribute="top" secondItem="1Mp-4Z-Oqz" secondAttribute="top" id="ARh-Wr-IVu"/>
+                            <constraint firstItem="1Mp-4Z-Oqz" firstAttribute="trailing" secondItem="BNI-ri-7jo" secondAttribute="trailing" id="BWu-rc-Ahr"/>
+                            <constraint firstItem="9Rx-3f-BMM" firstAttribute="trailing" secondItem="1Mp-4Z-Oqz" secondAttribute="trailing" id="Hb1-pn-N4i"/>
+                            <constraint firstItem="BNI-ri-7jo" firstAttribute="leading" secondItem="1Mp-4Z-Oqz" secondAttribute="leading" id="QcC-Tl-SFT"/>
+                            <constraint firstItem="1Mp-4Z-Oqz" firstAttribute="bottom" secondItem="BNI-ri-7jo" secondAttribute="bottom" id="YLB-69-5ns"/>
+                            <constraint firstItem="9Rx-3f-BMM" firstAttribute="top" secondItem="1Mp-4Z-Oqz" secondAttribute="top" constant="60" id="tqU-pL-1YT"/>
+                            <constraint firstItem="1Mp-4Z-Oqz" firstAttribute="bottom" secondItem="9Rx-3f-BMM" secondAttribute="bottom" constant="60" id="xeW-6K-3Hy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1Mp-4Z-Oqz"/>
                     </view>
+                    <connections>
+                        <outlet property="linesTableView" destination="9Rx-3f-BMM" id="iLY-uW-LLN"/>
+                        <outlet property="mapView" destination="BNI-ri-7jo" id="Kn4-jt-Hge"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6NC-dm-OHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="207"/>
+            <point key="canvasLocation" x="1756" y="206.44677661169416"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RU2-A2-6K3">

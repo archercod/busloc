@@ -1,5 +1,5 @@
 //
-//  CityTableViewCell.swift
+//  LineTableViewCell.swift
 //  Busloc
 //
 //  Created by Marcin Pietrzak on 19/02/2019.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class CityTableViewCell: UITableViewCell {
+class LineTableViewCell: UITableViewCell {
     
     // MARK: - Configuration
     
     enum ViewConfiguration: String {
-        case `default` = "CityTableViewCell"
+        case `default` = "LineTableViewCell"
         
         var nib: UINib? {
             get {
@@ -22,9 +22,12 @@ class CityTableViewCell: UITableViewCell {
         }
     }
     
+    // MARK: - Properties
+    
+    
     // MARK: - Outlets
     
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var lineNumberLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     
     // MARK: - View life cycle
@@ -32,6 +35,7 @@ class CityTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.setupView()
     }
     
     // MARK: - Set selected
@@ -40,9 +44,18 @@ class CityTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    // MARK: - Setups
+    
+    func setupView() {
+        
+        self.containerView.layer.cornerRadius = 8
+        self.containerView.clipsToBounds = true
+    }
+    
     // MARK: - Fill
     
-    func fill(title: String) {
-        self.titleLabel.text = title
+    func fill(lineNumber: String) {
+        self.lineNumberLabel.text = lineNumber
     }
+    
 }
