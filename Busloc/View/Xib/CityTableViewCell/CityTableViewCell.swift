@@ -32,12 +32,29 @@ class CityTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.setupView()
     }
     
     // MARK: - Set selected
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    // MARK: - Setups
+    
+    func setupView() {
+        self.containerView.layer.cornerRadius = 8
+        self.containerView.clipsToBounds = true
+        self.containerView.layer.masksToBounds = false
+        
+        self.containerView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        self.containerView.layer.shadowRadius = 2
+        self.containerView.layer.shadowOpacity = 0.5
+        self.containerView.layer.shadowColor = UIColor.lightGray.cgColor
+        
+        self.containerView.layer.borderColor = UIColor.lightGray.cgColor
+        self.containerView.layer.borderWidth = 0.5
     }
     
     // MARK: - Fill

@@ -22,6 +22,9 @@ class WarsawMapViewController: UIViewController {
     var warsawAllBuses = [Warsaw]()
     var warsawAllTrams = [Warsaw]()
     
+    var warsawBusByLine = [Warsaw]()
+    var warsawTramByLine = [Warsaw]()
+    
     var selectedLines = [String]()
     
     var requestTimer: Timer?
@@ -125,7 +128,7 @@ class WarsawMapViewController: UIViewController {
             WarsawService.shared.fetchWarsawBusList { (data) in
                 DispatchQueue.main.async {
                     self.mapView.removeAnnotations(self.mapView.annotations)
-                    self.warsawAllBuses.removeAll()
+                    self.warsawAllBuses = []
                     self.warsawAllBuses = data
                     completion()
                 }
@@ -149,11 +152,61 @@ class WarsawMapViewController: UIViewController {
             WarsawService.shared.fetchWarsawTramList { (data) in
                 DispatchQueue.main.async {
                     self.mapView.removeAnnotations(self.mapView.annotations)
-                    self.warsawAllTrams.removeAll()
+                    self.warsawAllTrams = []
                     self.warsawAllTrams = data
                 }
             }
         })
+    }
+    
+    /// Get bus by line number
+    ///
+    /// - Parameters:
+    ///   - number: String line number
+    ///   - completion: @escaping () -> Void
+    func getBusByLine(number: String, completion: @escaping () -> Void) {
+        
+        WarsawService.shared.fetchWarsawBusByLine(number: number) { (data) in
+            DispatchQueue.main.async {
+                self.warsawBusByLine = data
+            }
+        }
+        
+        self.requestTimer = Timer.scheduledTimer(withTimeInterval: requestRepeatInterval, repeats: true, block: { (timer) in
+            WarsawService.shared.fetchWarsawBusByLine(number: number) { (data) in
+                DispatchQueue.main.async {
+                    self.mapView.removeAnnotations(self.mapView.annotations)
+                    self.warsawBusByLine = []
+                    self.warsawBusByLine = data
+                }
+            }
+        })
+        
+    }
+    
+    /// Get tram by line number
+    ///
+    /// - Parameters:
+    ///   - number: String line number
+    ///   - completion: @escaping () -> Void
+    func getTramByLine(number: String, completion: @escaping () -> Void) {
+        
+        WarsawService.shared.fetchWarsawTramByLine(number: number) { (data) in
+            DispatchQueue.main.async {
+                self.warsawTramByLine = data
+            }
+        }
+        
+        self.requestTimer = Timer.scheduledTimer(withTimeInterval: requestRepeatInterval, repeats: true, block: { (timer) in
+            WarsawService.shared.fetchWarsawTramByLine(number: number) { (data) in
+                DispatchQueue.main.async {
+                    self.mapView.removeAnnotations(self.mapView.annotations)
+                    self.warsawTramByLine = []
+                    self.warsawTramByLine = data
+                }
+            }
+        })
+        
     }
     
 }
@@ -185,11 +238,7 @@ extension WarsawMapViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 
-extension WarsawMapViewController: UITableViewDelegate {
-    
-    
-    
-}
+extension WarsawMapViewController: UITableViewDelegate { }
 
 // MARK: - MKMapViewDelegate
 

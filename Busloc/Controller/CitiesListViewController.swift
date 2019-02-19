@@ -20,6 +20,10 @@ class CitiesListViewController: UIViewController {
         case toWarsawMap = "seg_toWarsawMap"
     }
     
+    enum CellHeight: CGFloat {
+        case cityCellHeight = 50.0
+    }
+    
     // MARK: - Properties
     
     let cities = ["Warszawa"]
@@ -77,6 +81,8 @@ extension CitiesListViewController: UITableViewDataSource {
         
         cell.fill(title: cityName)
         
+        cell.selectionStyle = .none
+        
         return cell
     }
     
@@ -89,6 +95,10 @@ extension CitiesListViewController: UITableViewDataSource {
             break
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CellHeight.cityCellHeight.rawValue
     }
     
 }
