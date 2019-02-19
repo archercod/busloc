@@ -70,4 +70,60 @@ final class WarsawService {
         
     }
     
+    /// Fetch Warsaw bus by line number
+    ///
+    /// - Parameters:
+    ///   - number: String number
+    ///   - onCompletion: @escaping ([Warsaw]) -> ()
+    func fetchWarsawBusByLine(number: String, onCompletion: @escaping ([Warsaw]) -> ()) {
+        
+        let urlString = "\(WarsawApiUrl.singleBus)&line=\(number)"
+        let url = URL(string: urlString)!
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            guard let data = data else {
+                print("Data was nil")
+                return
+            }
+            
+            guard let warsawBusByLine = try? JSONDecoder().decode(WarsawList.self, from: data) else {
+                print("Couldn't decode JSON")
+                return
+            }
+            
+            onCompletion(warsawBusByLine.result)
+        }
+        
+        task.resume()
+    }
+    
+    /// Fetch Warsaw tram by line number
+    ///
+    /// - Parameters:
+    ///   - number: String number
+    ///   - onCompletion: @escaping ([Warsaw]) -> ()
+    func fetchWarsawTramByLine(number: String, onCompletion: @escaping ([Warsaw]) -> ()) {
+        
+        let urlString = "\(WarsawApiUrl.singleTram)&line=\(number)"
+        let url = URL(string: urlString)!
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            guard let data = data else {
+                print("Data was nil")
+                return
+            }
+            
+            guard let warsawBusByLine = try? JSONDecoder().decode(WarsawList.self, from: data) else {
+                print("Couldn't decode JSON")
+                return
+            }
+            
+            onCompletion(warsawBusByLine.result)
+        }
+        
+        task.resume()
+    }
+    
 }
