@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAB061C9221BDDEB00736130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB061C8221BDDEB00736130 /* AppDelegate.swift */; };
+		EAB061CB221BDDEB00736130 /* CitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB061CA221BDDEB00736130 /* CitiesListViewController.swift */; };
+		EAB061CE221BDDEB00736130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB061CC221BDDEB00736130 /* Main.storyboard */; };
+		EAB061D1221BDDEB00736130 /* Busloc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAB061CF221BDDEB00736130 /* Busloc.xcdatamodeld */; };
+		EAB061D3221BDDED00736130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB061D2221BDDED00736130 /* Assets.xcassets */; };
+		EAB061D6221BDDED00736130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB061D4221BDDED00736130 /* LaunchScreen.storyboard */; };
+		EAB061E1221BDDED00736130 /* BuslocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB061E0221BDDED00736130 /* BuslocTests.swift */; };
+		EAB061EC221BDDED00736130 /* BuslocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB061EB221BDDED00736130 /* BuslocUITests.swift */; };
+		EAB06203221BE36500736130 /* WarsawMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB06202221BE36500736130 /* WarsawMapViewController.swift */; };
+		EAB06206221BE80300736130 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB06205221BE80300736130 /* Configs.swift */; };
+		EAB06209221BEB0F00736130 /* WarsawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB06208221BEB0F00736130 /* WarsawModel.swift */; };
+		EAB0620B221BEBE100736130 /* WarsawService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0620A221BEBE100736130 /* WarsawService.swift */; };
+		EAB06213221BF0D200736130 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB06211221BF0D200736130 /* CityTableViewCell.swift */; };
+		EAB06214221BF0D200736130 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB06212221BF0D200736130 /* CityTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAB061DD221BDDED00736130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB061BD221BDDEB00736130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAB061C4221BDDEB00736130;
+			remoteInfo = Busloc;
+		};
+		EAB061E8221BDDED00736130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB061BD221BDDEB00736130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAB061C4221BDDEB00736130;
+			remoteInfo = Busloc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAB061C5221BDDEB00736130 /* Busloc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Busloc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB061C8221BDDEB00736130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAB061CA221BDDEB00736130 /* CitiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewController.swift; sourceTree = "<group>"; };
+		EAB061CD221BDDEB00736130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAB061D0221BDDEB00736130 /* Busloc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Busloc.xcdatamodel; sourceTree = "<group>"; };
+		EAB061D2221BDDED00736130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAB061D5221BDDED00736130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAB061D7221BDDED00736130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB061DC221BDDED00736130 /* BuslocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuslocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB061E0221BDDED00736130 /* BuslocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuslocTests.swift; sourceTree = "<group>"; };
+		EAB061E2221BDDED00736130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB061E7221BDDED00736130 /* BuslocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuslocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB061EB221BDDED00736130 /* BuslocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuslocUITests.swift; sourceTree = "<group>"; };
+		EAB061ED221BDDED00736130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB06202221BE36500736130 /* WarsawMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarsawMapViewController.swift; sourceTree = "<group>"; };
+		EAB06205221BE80300736130 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		EAB06208221BEB0F00736130 /* WarsawModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarsawModel.swift; sourceTree = "<group>"; };
+		EAB0620A221BEBE100736130 /* WarsawService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarsawService.swift; sourceTree = "<group>"; };
+		EAB06211221BF0D200736130 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		EAB06212221BF0D200736130 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAB061C2221BDDEB00736130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB061D9221BDDED00736130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB061E4221BDDED00736130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAB061BC221BDDEB00736130 = {
+			isa = PBXGroup;
+			children = (
+				EAB061C7221BDDEB00736130 /* Busloc */,
+				EAB061DF221BDDED00736130 /* BuslocTests */,
+				EAB061EA221BDDED00736130 /* BuslocUITests */,
+				EAB061C6221BDDEB00736130 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAB061C6221BDDEB00736130 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAB061C5221BDDEB00736130 /* Busloc.app */,
+				EAB061DC221BDDED00736130 /* BuslocTests.xctest */,
+				EAB061E7221BDDED00736130 /* BuslocUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAB061C7221BDDEB00736130 /* Busloc */ = {
+			isa = PBXGroup;
+			children = (
+				EAB06204221BE7F000736130 /* Configs */,
+				EAB061C8221BDDEB00736130 /* AppDelegate.swift */,
+				EAB061FB221BDE0F00736130 /* Controller */,
+				EAB061FA221BDE0A00736130 /* View */,
+				EAB061F9221BDDFD00736130 /* Model */,
+				EAB061FD221BDE1A00736130 /* Networking */,
+				EAB061FC221BDE1400736130 /* Extensions */,
+				EAB06200221BDE4C00736130 /* Resources */,
+			);
+			path = Busloc;
+			sourceTree = "<group>";
+		};
+		EAB061DF221BDDED00736130 /* BuslocTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB061E0221BDDED00736130 /* BuslocTests.swift */,
+				EAB061E2221BDDED00736130 /* Info.plist */,
+			);
+			path = BuslocTests;
+			sourceTree = "<group>";
+		};
+		EAB061EA221BDDED00736130 /* BuslocUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB061EB221BDDED00736130 /* BuslocUITests.swift */,
+				EAB061ED221BDDED00736130 /* Info.plist */,
+			);
+			path = BuslocUITests;
+			sourceTree = "<group>";
+		};
+		EAB061F9221BDDFD00736130 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAB06207221BEAFF00736130 /* Warsaw */,
+				EAB06201221BDE5B00736130 /* CoreData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAB061FA221BDE0A00736130 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAB061FF221BDE3800736130 /* Xib */,
+				EAB061FE221BDE3200736130 /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAB061FB221BDE0F00736130 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAB061CA221BDDEB00736130 /* CitiesListViewController.swift */,
+				EAB06202221BE36500736130 /* WarsawMapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EAB061FC221BDE1400736130 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EAB061FD221BDE1A00736130 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EAB0620A221BEBE100736130 /* WarsawService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EAB061FE221BDE3200736130 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EAB061CC221BDDEB00736130 /* Main.storyboard */,
+				EAB061D4221BDDED00736130 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EAB061FF221BDE3800736130 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				EAB0620E221BF06500736130 /* CityTableViewCell */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		EAB06200221BDE4C00736130 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAB061D2221BDDED00736130 /* Assets.xcassets */,
+				EAB061D7221BDDED00736130 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAB06201221BDE5B00736130 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EAB061CF221BDDEB00736130 /* Busloc.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		EAB06204221BE7F000736130 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				EAB06205221BE80300736130 /* Configs.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		EAB06207221BEAFF00736130 /* Warsaw */ = {
+			isa = PBXGroup;
+			children = (
+				EAB06208221BEB0F00736130 /* WarsawModel.swift */,
+			);
+			path = Warsaw;
+			sourceTree = "<group>";
+		};
+		EAB0620E221BF06500736130 /* CityTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EAB06211221BF0D200736130 /* CityTableViewCell.swift */,
+				EAB06212221BF0D200736130 /* CityTableViewCell.xib */,
+			);
+			path = CityTableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAB061C4221BDDEB00736130 /* Busloc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB061F0221BDDED00736130 /* Build configuration list for PBXNativeTarget "Busloc" */;
+			buildPhases = (
+				EAB061C1221BDDEB00736130 /* Sources */,
+				EAB061C2221BDDEB00736130 /* Frameworks */,
+				EAB061C3221BDDEB00736130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Busloc;
+			productName = Busloc;
+			productReference = EAB061C5221BDDEB00736130 /* Busloc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAB061DB221BDDED00736130 /* BuslocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB061F3221BDDED00736130 /* Build configuration list for PBXNativeTarget "BuslocTests" */;
+			buildPhases = (
+				EAB061D8221BDDED00736130 /* Sources */,
+				EAB061D9221BDDED00736130 /* Frameworks */,
+				EAB061DA221BDDED00736130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAB061DE221BDDED00736130 /* PBXTargetDependency */,
+			);
+			name = BuslocTests;
+			productName = BuslocTests;
+			productReference = EAB061DC221BDDED00736130 /* BuslocTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAB061E6221BDDED00736130 /* BuslocUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB061F6221BDDED00736130 /* Build configuration list for PBXNativeTarget "BuslocUITests" */;
+			buildPhases = (
+				EAB061E3221BDDED00736130 /* Sources */,
+				EAB061E4221BDDED00736130 /* Frameworks */,
+				EAB061E5221BDDED00736130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAB061E9221BDDED00736130 /* PBXTargetDependency */,
+			);
+			name = BuslocUITests;
+			productName = BuslocUITests;
+			productReference = EAB061E7221BDDED00736130 /* BuslocUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAB061BD221BDDEB00736130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Marcin Pietrzak";
+				TargetAttributes = {
+					EAB061C4221BDDEB00736130 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EAB061DB221BDDED00736130 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EAB061C4221BDDEB00736130;
+					};
+					EAB061E6221BDDED00736130 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EAB061C4221BDDEB00736130;
+					};
+				};
+			};
+			buildConfigurationList = EAB061C0221BDDEB00736130 /* Build configuration list for PBXProject "Busloc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAB061BC221BDDEB00736130;
+			productRefGroup = EAB061C6221BDDEB00736130 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAB061C4221BDDEB00736130 /* Busloc */,
+				EAB061DB221BDDED00736130 /* BuslocTests */,
+				EAB061E6221BDDED00736130 /* BuslocUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAB061C3221BDDEB00736130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB061D6221BDDED00736130 /* LaunchScreen.storyboard in Resources */,
+				EAB061D3221BDDED00736130 /* Assets.xcassets in Resources */,
+				EAB06214221BF0D200736130 /* CityTableViewCell.xib in Resources */,
+				EAB061CE221BDDEB00736130 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB061DA221BDDED00736130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB061E5221BDDED00736130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAB061C1221BDDEB00736130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB06209221BEB0F00736130 /* WarsawModel.swift in Sources */,
+				EAB06206221BE80300736130 /* Configs.swift in Sources */,
+				EAB061CB221BDDEB00736130 /* CitiesListViewController.swift in Sources */,
+				EAB061C9221BDDEB00736130 /* AppDelegate.swift in Sources */,
+				EAB0620B221BEBE100736130 /* WarsawService.swift in Sources */,
+				EAB06203221BE36500736130 /* WarsawMapViewController.swift in Sources */,
+				EAB06213221BF0D200736130 /* CityTableViewCell.swift in Sources */,
+				EAB061D1221BDDEB00736130 /* Busloc.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB061D8221BDDED00736130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB061E1221BDDED00736130 /* BuslocTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB061E3221BDDED00736130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB061EC221BDDED00736130 /* BuslocUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAB061DE221BDDED00736130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAB061C4221BDDEB00736130 /* Busloc */;
+			targetProxy = EAB061DD221BDDED00736130 /* PBXContainerItemProxy */;
+		};
+		EAB061E9221BDDED00736130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAB061C4221BDDEB00736130 /* Busloc */;
+			targetProxy = EAB061E8221BDDED00736130 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAB061CC221BDDEB00736130 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB061CD221BDDEB00736130 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAB061D4221BDDED00736130 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB061D5221BDDED00736130 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAB061EE221BDDED00736130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAB061EF221BDDED00736130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAB061F1221BDDED00736130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZM8JH55Z4;
+				INFOPLIST_FILE = "$(SRCROOT)/Busloc/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcinpietrzak.Busloc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAB061F2221BDDED00736130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZM8JH55Z4;
+				INFOPLIST_FILE = "$(SRCROOT)/Busloc/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcinpietrzak.Busloc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAB061F4221BDDED00736130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZM8JH55Z4;
+				INFOPLIST_FILE = BuslocTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcinpietrzak.BuslocTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Busloc.app/Busloc";
+			};
+			name = Debug;
+		};
+		EAB061F5221BDDED00736130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZM8JH55Z4;
+				INFOPLIST_FILE = BuslocTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcinpietrzak.BuslocTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Busloc.app/Busloc";
+			};
+			name = Release;
+		};
+		EAB061F7221BDDED00736130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZM8JH55Z4;
+				INFOPLIST_FILE = BuslocUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcinpietrzak.BuslocUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Busloc;
+			};
+			name = Debug;
+		};
+		EAB061F8221BDDED00736130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZM8JH55Z4;
+				INFOPLIST_FILE = BuslocUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcinpietrzak.BuslocUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Busloc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAB061C0221BDDEB00736130 /* Build configuration list for PBXProject "Busloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB061EE221BDDED00736130 /* Debug */,
+				EAB061EF221BDDED00736130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB061F0221BDDED00736130 /* Build configuration list for PBXNativeTarget "Busloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB061F1221BDDED00736130 /* Debug */,
+				EAB061F2221BDDED00736130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB061F3221BDDED00736130 /* Build configuration list for PBXNativeTarget "BuslocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB061F4221BDDED00736130 /* Debug */,
+				EAB061F5221BDDED00736130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB061F6221BDDED00736130 /* Build configuration list for PBXNativeTarget "BuslocUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB061F7221BDDED00736130 /* Debug */,
+				EAB061F8221BDDED00736130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EAB061CF221BDDEB00736130 /* Busloc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAB061D0221BDDEB00736130 /* Busloc.xcdatamodel */,
+			);
+			currentVersion = EAB061D0221BDDEB00736130 /* Busloc.xcdatamodel */;
+			path = Busloc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EAB061BD221BDDEB00736130 /* Project object */;
+}
